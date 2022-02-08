@@ -22,8 +22,7 @@ Route::group(['domain' => 'proxy.realret.dev'], function()
 });
 
 //'domain' => 'localhost'
-Route::group(['domain' => 'management.realret.dev'], function()
-{
+
     Route::group([], function(){
         Route::get('index', function()
         {
@@ -71,4 +70,3 @@ Route::group(['domain' => 'management.realret.dev'], function()
     Route::get('/register', function () {
         return view('register');
     });
-});
