@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['domain' => 'qrproxy.nl'], function()
+Route::group(['domain' => 'proxy.realret.dev'], function()
 {
     Route::get('/index', function()
     {
@@ -22,7 +22,7 @@ Route::group(['domain' => 'qrproxy.nl'], function()
 });
 
 //'domain' => 'localhost'
-Route::group([], function()
+Route::group(['domain' => 'management.realret.dev'], function()
 {
     Route::group([], function(){
         Route::get('index', function()

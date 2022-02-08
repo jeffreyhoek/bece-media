@@ -4,7 +4,7 @@
     //This is a placeholder as a proof of concept
     use App\Models\QRCode;
     $item = QRCode::find(request()->route('id'));
-    $url = "http://localhost:8000/index?code=".$item->code
+    $url = "https://proxy.realret.dev/index?code=".$item->code
 @endphp
 
 <!DOCTYPE html>
